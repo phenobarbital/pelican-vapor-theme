@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+<!--
+       _          _  _                                 
+  __ _| |__  _ __| || |__  ____ _ ___   ___  _ __ __ _ 
+ / _` | '_ \| '__| || |\ \/ / _` / __| / _ \| '__/ _` |
+| (_| | |_) | |  |__   _>  < (_| \__ \| (_) | | | (_| |
+ \__,_|_.__/|_|     |_|/_/\_\__,_|___(_)___/|_|  \__, |
+                                                 |___/ 
+--> 
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/screen.css" />
@@ -29,13 +37,97 @@
     <meta name="revisit" content="1" />
     <meta name="robots" content="index,follow" />
     <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection/" />
-
-
-    {% block head %}
-    {% endblock head %}
+{# Open Graph tags #}
+    {% if USE_OPEN_GRAPH is not defined %}
+        {% set USE_OPEN_GRAPH = True %}
+    {% endif %}
+{% if USE_OPEN_GRAPH %}
+<!-- Open Graph tags -->
+{% if OPEN_GRAPH_FB_APP_ID %}
+    <meta property="fb:app_id" content="{{ OPEN_GRAPH_FB_APP_ID }}"/>
+{% endif %}
+        <meta name="twitter:card" content="summary"> 
+        <meta name="twitter:site" content="@{{ TWITTER_USERNAME }}">
+        <meta property="og:site_name" content="{{ SITENAME }}" />
+        <meta property="og:locale" content="es_ES" />
+        <meta property="og:locale:alternate" content="en_GB" />
+    {% if article %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ article.url }}">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="300">
+        <meta property="og:image:height" content="300">     
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="{{ article.title|striptags }}"/>
+        <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}"/> 
+        <meta property="og:description" content="{{ article.summary|striptags|escape }}"/>
+        <meta property="article:published_time" content="{{ article.date.strftime("%Y-%m-%d") }}" />
+        <meta name="twitter:title" content="{{ article.title|striptags }}">
+        <meta name="twitter:description" content="{{ article.summary|striptags|escape }}">  
+        <meta name="description" content="{{ article.summary|striptags|escape }}">
+        <meta name="twitter:creator" content="@{{ article.twitter }}">
+        <meta name="twitter:image" content="{{ SITEURL }}/{{ article.image }}">  
+        <meta property="og:image" content="{{ SITEURL }}/{{ article.image }}"/>   
+        {% if article.category %}
+            <meta property="article:section" content="{{ article.category }}" />
+        {% endif %}
+        {% for tag in article.tags %}
+            <meta property="article:tag" content="{{ tag }}" />
+        {% endfor %}
+        {% if article.author %}
+            <meta property="article:author" content="{{ article.author }}" />
+        {% endif %}
+    {% elif page %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ page.url }}">    
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="{{ page.title }}"/>
+        <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}"/>
+        <meta property="og:image" content="{{ SITEURL }}/theme/images/logo.png" />
+        <meta name="twitter:image" content="{{ SITEURL }}/theme/images/logo.png" /> 
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="300">
+        <meta property="og:image:height" content="300">    
+    {% else %}
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="{{ SITENAME }}"/>
+        <meta property="og:url" content="{{ SITEURL }}"/>
+        <meta property="og:description" content="El blog de abr4xas, blog sobre noticias, tecnología, música, gnu/linux, anime, actualidad, intercambio y directorio de informacion de servicios profesionales en tecnología. Eventos, Asesorias Software Libre"/>
+        <link rel="canonical" href="{{ SITEURL }}">    
+        <meta property="og:image" content="{{ SITEURL }}/theme/images/logo.png" />
+        <meta name="twitter:image" content="{{ SITEURL }}/theme/images/logo.png" /> 
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="300">
+        <meta property="og:image:height" content="300">
+        <meta name="description" content="El blog de abr4xas, blog sobre noticias, tecnología, música, gnu/linux, anime, actualidad, intercambio y directorio de informacion de servicios profesionales en tecnología. Eventos, Asesorias Software Libre">    
+        {% if OPEN_GRAPH_IMAGE %}
+            <meta property="og:image" content="{{ SITEURL }}/theme/images/logo.png" />
+            <meta name="twitter:image" content="{{ SITEURL }}/theme/images/logo.png" /> 
+            <meta property="og:image:type" content="image/png">
+            <meta property="og:image:width" content="300">
+            <meta property="og:image:height" content="300">
+        {% endif %}
+    {% endif %}
+{% endif %}    
+    <link type="text/plain" rel="socialmedia" href="http://abr4xas.org/socialmedia.txt" />
 {% if FEED_RSS %}
     <link href="{{ SITEURL }}/{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
 {% endif %}
+    
+<!-- icons -->
+    <link rel="shortcut icon" href="{{ SITEURL }}/theme/images/favicon.ico">
+    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-160x160.png" sizes="160x160" />
+    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-16x16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ SITEURL }}/theme/images/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ SITEURL }}/theme/images/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ SITEURL }}/theme/images/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ SITEURL }}/theme/images/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ SITEURL }}/theme/images/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ SITEURL }}/theme/images/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ SITEURL }}/theme/images/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ SITEURL }}/theme/images/apple-touch-icon-57x57.png" />   
+<!--/ icons -->
 </head>
 <body id="index" class="home">
 
