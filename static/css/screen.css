@@ -24,10 +24,6 @@ dt,
 dd {
   font-family: "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
 }
-h1,
-.post-meta {
-  text-align: center;
-}
 a,
 a:visited {
   color: #3498db;
@@ -231,11 +227,14 @@ div.authorimage {
   margin-right: 10px;
   float: left;
 }
-h1.post-title a,
-h1.blog-title a {
-  color: #151515;
+h1.post-title a{
+  color: #000;
   transition: color ease 0.7s;
   -webkit-transition: color ease 0.7s;
+}
+h1.blog-title a {
+    color: #fff;
+    transition: color 0.7s ease 0s;
 }
 h1.post-title a:focus,
 h1.post-title a:hover,
@@ -292,8 +291,6 @@ footer.post-footer {
 }
 /* === Navigation and Pagination === */
 nav {
-  border-bottom: 1px solid #ecf0f1;
-  border-top: 1px solid #ecf0f1;
   margin-bottom: 2em;
   text-align: center;
   margin: 20px auto 2em auto;
@@ -320,6 +317,7 @@ nav ul li {
 nav ul li a {
   display: block;
   padding: .5em 0;
+  color: #fff;
 }
 nav.menu {
   margin-bottom: 2.5em;
