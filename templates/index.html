@@ -9,12 +9,14 @@
     <article class="preview">
         <header>
             <h1 class="post-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title|striptags }}</a></h1>
-            <div class="post-meta">
-                <time datetime="{{ article.date|strftime('%YYYY-%MM-%DD') }}">
+        <div class="post-meta">
+            <time datetime="{{ article.date|strftime('%YYYY-%MM-%DD') }}">
                 <i class="fa fa-calendar"></i>
                 {{ article.date|strftime('%A, %B %d, %Y') }}
-                </time>
-            </div>
+            </time>
+            <i class="fa fa-user"></i>
+            {{ article.author }}
+        </div>
         </header>
         <section class="post-excerpt">
             <p>{{ article.summary }}</p>
