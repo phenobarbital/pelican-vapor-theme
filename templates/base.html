@@ -65,8 +65,8 @@
         <meta name="twitter:description" content="{{ article.summary|striptags|escape }}">  
         <meta name="description" content="{{ article.summary|striptags|escape }}">
         <meta name="twitter:creator" content="@{{ article.twitter }}">
-        <meta name="twitter:image" content="{{ SITEURL }}/{{ article.image }}">  
-        <meta property="og:image" content="{{ SITEURL }}/{{ article.image }}"/>   
+        <meta name="twitter:image" content="{{ article.image }}">  
+        <meta property="og:image" content="{{ article.image }}"/>   
         {% if article.category %}
             <meta property="article:section" content="{{ article.category }}" />
         {% endif %}
