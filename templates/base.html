@@ -11,8 +11,11 @@
                                                   |___/ 
 --> 
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/screen.css" />
+    {% assets filters="cssmin", output="css/style.min.css", "css/normalize.css", "css/screen.css" %}
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+    {% endassets %}
+    <!-- link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/screen.css" / -->
     <link rel="publisher" href="{{ PUBLISHER }}"/>
     <link rel="apple-touch-startup-image" href="{{ STARTUP_IMAGE }}">
     <link type="text/plain" rel="socialmedia" href="{{ SITEURL }}/socialmedia.txt" />
