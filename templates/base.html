@@ -132,7 +132,10 @@
 <body id="index" class="home">
 
     <header id="site-head">
-        <h1 class="blog-title"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
+        <h1 class="blog-title">
+            <a href="{{ SITEURL }}">{{ SITENAME }}</a>
+            <span># nano /var/log/life.log</span>
+        </h1>
         <nav class="menu" role="nav">
             <ul>
                 {% for p in PAGES %}
