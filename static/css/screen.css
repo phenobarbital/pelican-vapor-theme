@@ -88,7 +88,7 @@ a.archive-link,
   width: 90%;
 }
 #site-head {
-padding: 20px 0px;
+padding: 10px 0px;
 color: #F8F8F8;
 background: url("http://abr4xas.github.io/sks-web/img/banner-bg.jpg") no-repeat scroll center center / cover transparent;
 }
@@ -126,7 +126,6 @@ h1.blog-title {
   font-size: 48px;
   line-height: 52px;
   margin-top: 10px;
-  margin-bottom: 30px;
   padding: 0;
 }
 h1.blog-title span {
@@ -333,9 +332,6 @@ nav ul li a {
   display: block;
   padding: .5em 0;
   color: #fff;
-}
-nav.menu {
-  margin-bottom: 2.5em;
 }
 nav.menu li {
   margin: 0 .5em;
