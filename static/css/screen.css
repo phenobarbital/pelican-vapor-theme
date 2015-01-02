@@ -196,8 +196,7 @@ section.author p.bio {
   line-height: 1.4em;
 }
 blockquote {
-    background: url(images/bg-quote2.png) no-repeat;    
-    border-left: 1px dashed #ccc;
+    background: url("../images/bg-quote1.png") no-repeat;    
     color: #a5a4a4;
     font-style:italic;
     margin: 30px;
