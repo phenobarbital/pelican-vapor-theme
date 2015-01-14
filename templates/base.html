@@ -103,7 +103,6 @@
 {% if FEED_RSS %}
     <link href="{{ SITEURL }}/{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
 {% endif %}
-    
 <!-- icons -->
     <link rel="shortcut icon" href="{{ SITEURL }}/theme/images/favicon.ico">
     <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-196x196.png" sizes="196x196" />
@@ -120,9 +119,17 @@
     <link rel="apple-touch-icon" sizes="60x60" href="{{ SITEURL }}/theme/images/apple-touch-icon-60x60.png" />
     <link rel="apple-touch-icon" sizes="57x57" href="{{ SITEURL }}/theme/images/apple-touch-icon-57x57.png" />   
 <!--/ icons -->
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', '{{GOOGLE_ANALYTICS}}', 'auto');
+          ga('send', 'pageview');
+        var _qevents = _qevents || [];
+    </script>
 </head>
 <body id="index" class="home">
-
     <header id="site-head">
         <h1 class="blog-title">
             <a href="{{ SITEURL }}">{{ SITENAME }}</a>
@@ -131,16 +138,14 @@
         <nav class="menu" role="nav">
             <ul>
                 {% for p in PAGES %}
-                    <li><a href="{{ SITEURL }}/{{ p.url }}" title="{{ p.title }}">{{ p.title }}</a></li>
+                <li><a href="{{ SITEURL }}/{{ p.url }}" title="{{ p.title }}">{{ p.title }}</a></li>
                 {% endfor %}
                 <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL | default('archives.html') }}" title="Archives"> Archives</a></li>
             </ul>
         </nav>
     </header>
-
     {% block content %}
     {% endblock %}
-
     <footer class="site-footer">
         <div class="inner">
             <section class="copyright">
@@ -150,17 +155,6 @@
             <section>Based on Vapor theme by <a href="http://sethlilly.com/" target="_blank">Seth Lilly</a></section>
         </div>
     </footer>
-
     <script type="text/javascript" src="theme/js/index.js"></script>
-    <script type="text/javascript">
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{GOOGLE_ANALYTICS}}', 'auto');
-      ga('send', 'pageview');
-    var _qevents = _qevents || [];
-</script>
-
 </body>
 </html>
