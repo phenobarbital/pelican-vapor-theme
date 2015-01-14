@@ -15,7 +15,8 @@ body * {
   max-height: 1000000em;
 }
 hr {
-    visibility: hidden;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #FFF;
 }
 h1,
 h2,
