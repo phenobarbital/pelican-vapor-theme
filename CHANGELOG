@@ -1,0 +1,440 @@
+commit 49e020b56a9c2a121b195955b8d8acfac71b5fb5
+Author: abr4xas <me@abr4xas.org>
+Date:   Thu Jan 15 18:27:11 2015 -0500
+
+    Agregando version optimizada y actualizada de normalize.css
+
+commit d86d70304ab9fe654088d4ae8523620ebc48377a
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Jan 15 18:07:26 2015 -0430
+
+    Update base.html
+
+commit 02afebf1fe777b93214ae758a5e997cae5aa2447
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Wed Jan 14 12:57:21 2015 -0430
+
+    Update pagination.html
+
+commit e6b8d6fb3a776bb643ae917047cf1fe90bd716cc
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Wed Jan 14 12:24:11 2015 -0430
+
+    Update index.html
+
+commit f9da85425f713209ddc14d07cecb977ee2860db8
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Wed Jan 14 12:20:08 2015 -0430
+
+    Update base.html
+
+commit b1cc7b4b4b0db905adab7e2aa2f1291fbb0063ae
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Wed Jan 14 12:18:15 2015 -0430
+
+    Update screen.css
+
+commit 40bd6752ca33fb317a22f684ef0d126f010ab4f8
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Wed Jan 14 12:17:50 2015 -0430
+
+    Update article.html
+
+commit 5465993e30143a2cf9f92d3f356e9646a5d8efcf
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Tue Jan 13 10:49:10 2015 -0430
+
+    Update article.html
+    
+    Se agrega link de donaciones por btc
+
+commit 7d9e36c1d3b0710244c7afffea7edb0e05da5628
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sun Jan 11 17:19:00 2015 -0430
+
+    Update article.html
+    
+    Se agrega Bloglovin widget
+
+commit 7b5e023846949ee3f63222d14a5614b8be5ba369
+Author: abr4xas <me@abr4xas.org>
+Date:   Fri Jan 2 13:43:59 2015 -0500
+
+    modificado
+
+commit b1b31978e88a00db7733b97ef07a16c20d8da94b
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Fri Jan 2 13:02:47 2015 -0430
+
+    Update screen.css
+
+commit b6fde13a71d4a1ca3cca201bbc75651926c61287
+Merge: 38ba7c1 c1405d2
+Author: abr4xas <me@abr4xas.org>
+Date:   Fri Jan 2 12:32:01 2015 -0500
+
+    Merge branch 'master' of https://github.com/abr4xas/pelican-vapor-theme
+
+commit 38ba7c1158aecdd363efcb5d59be44edadb88094
+Author: abr4xas <me@abr4xas.org>
+Date:   Fri Jan 2 12:31:27 2015 -0500
+
+    new file
+
+commit c1405d2c97c9cd2979e8c8ab823983bdf7008e1f
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Tue Dec 30 16:04:12 2014 -0430
+
+    Update index.html
+
+commit 18dd16276a4ba436cc57164782588937da3d9682
+Author: abr4xas <me@abr4xas.org>
+Date:   Tue Dec 30 15:09:56 2014 -0500
+
+    modificado
+
+commit 3780af8dc399cc1df78630cc7b80eb1e72a48484
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Tue Dec 30 15:29:16 2014 -0430
+
+    Update base.html
+
+commit 330488bd642141351c08697bc983446889a8af2c
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Tue Dec 30 15:16:14 2014 -0430
+
+    Update base.html
+
+commit dea63e3cbd5893d8cd7bb874f08801c48614a219
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Tue Dec 30 12:50:08 2014 -0430
+
+    Update screen.css
+
+commit ef128feb71ca39c4e611b4948dc1d76af73fef78
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Mon Dec 29 21:09:17 2014 -0430
+
+    Update screen.css
+
+commit 6dac3470b0aa8f72fee04d1b8b70ecf39d253413
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Mon Dec 29 21:06:56 2014 -0430
+
+    Update screen.css
+
+commit 287c4c080cf7653abab3c26d8c7983eb54e6a4ee
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Mon Dec 29 20:59:56 2014 -0430
+
+    Update base.html
+
+commit 7824c8c15dacd967e77d77711f5d98d3cddef0de
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Mon Dec 29 20:57:54 2014 -0430
+
+    Update screen.css
+
+commit 228c479b83aecdd8be27c088edfd8f2c2995e0aa
+Author: abr4xas <me@abr4xas.org>
+Date:   Sun Dec 28 18:11:30 2014 -0500
+
+    actualizado
+
+commit 62793ec5b9b869bdd144fc66e1cb1664c4076b79
+Author: abr4xas <me@abr4xas.org>
+Date:   Sun Dec 28 18:08:57 2014 -0500
+
+    new file
+
+commit 45949e9d9103a0cd761990f5296ed3e0b624c225
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sun Dec 28 18:08:02 2014 -0430
+
+    Update page.html
+
+commit 3a992e7cd95b678869eaae001f29637cdb9d5ed9
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sun Dec 28 18:07:23 2014 -0430
+
+    Update article.html
+
+commit 5025bfbfa2b061c8b5550ac1a5e2d0fcecfcc947
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sun Dec 28 18:03:14 2014 -0430
+
+    Update base.html
+
+commit 8688043e0d1beff520ae4ddb413413389ff97c91
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sun Dec 28 16:48:59 2014 -0430
+
+    Update base.html
+
+commit cc5c45d13254ad0d1d7f651e40846fe830e3051d
+Author: abr4xas <me@abr4xas.org>
+Date:   Sun Dec 28 15:31:28 2014 -0500
+
+    Se agrega meta etiqueta para IE11 tiles+notifications
+
+commit 5a80dc819d19ee517381e21bb4ce99231a8c3333
+Author: abr4xas <me@abr4xas.org>
+Date:   Sun Dec 28 15:27:27 2014 -0500
+
+    Se agrega contenido para IE11 tiles+notifications
+
+commit 8a074f3e695eadf6fc3a010efabe7135e1376fbf
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sun Dec 28 15:17:47 2014 -0430
+
+    Update ads.html
+
+commit 55596a392d91e3a526d8e2bcd4593bf441cb83f9
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sun Dec 28 15:17:20 2014 -0430
+
+    Update base.html
+
+commit 69e7ead90a10437adc7aef79626b98956d23e9ce
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sun Dec 28 15:04:48 2014 -0430
+
+    Update index.html
+
+commit 4fe71958bd41d4fe6c8918bcd1d7b360f02ebb70
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sun Dec 28 15:04:01 2014 -0430
+
+    Update article.html
+
+commit 871e61c5306a011402e39f7b3f43eafb78bdb5d0
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sun Dec 28 14:59:07 2014 -0430
+
+    Update base.html
+
+commit 5156ba9c25ca3bda67004aa0965c42fe5b35d763
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sun Dec 28 14:55:56 2014 -0430
+
+    Update base.html
+
+commit fc8203b10383fdf5520f13fabfe4b05c3cac47a0
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sun Dec 28 14:54:44 2014 -0430
+
+    Update index.html
+
+commit d966416a5a093c2c2c30d2c3b3e3159d56599822
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sun Dec 28 14:52:04 2014 -0430
+
+    Update screen.css
+
+commit 7fb95252519f6ddb51ba2f5ea1512881e10661e7
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sun Dec 28 14:50:56 2014 -0430
+
+    Update screen.css
+
+commit d5090038b421a2ed4ab38723f8659d2283196a56
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sun Dec 28 14:11:29 2014 -0430
+
+    Update screen.css
+    
+    Cambios varios
+
+commit 1f4dc40edaece904503887e9de0048e7d4b7cc97
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sun Dec 28 13:57:50 2014 -0430
+
+    Update article.html
+    
+    Se agrega banner de freelancer.com
+
+commit 56a01ce451a80823aa7b86cc7a33f5440790a4cf
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sat Dec 20 14:49:49 2014 -0430
+
+    Create coments.html
+
+commit 918723e988782dc104ff64ec28b402ca623005cf
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sat Dec 20 14:47:47 2014 -0430
+
+    Update article.html
+
+commit 1d95b1c52a5cc86ecc516c96fde2ba9c79ffcaea
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sat Dec 20 14:15:24 2014 -0430
+
+    Update article.html
+
+commit 27e4a1141bfdb628cc780531d4f2dbb98522c5a7
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sat Dec 20 14:14:34 2014 -0430
+
+    Update base.html
+
+commit a4b590e410fbfbce5a68f2a721f90c62948f8b0d
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sat Dec 20 14:14:02 2014 -0430
+
+    Create ads.html
+
+commit a576fa4dec55db12861a1e94fd85b94ca6748c42
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 14:58:54 2014 -0430
+
+    Update article.html
+
+commit 1a23785722618a7717af78122cf471f5f06f798a
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 14:58:08 2014 -0430
+
+    Update base.html
+
+commit 42dfd8f7d13625d97b197ccc1a63af2173b8623b
+Author: abr4xas <me@abr4xas.org>
+Date:   Thu Dec 18 13:22:45 2014 -0500
+
+    New file
+
+commit ebefedd1a1a64f9bf0fbc8918a8517f75e380dbf
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 12:24:00 2014 -0430
+
+    Update screen.css
+
+commit 14afce7fda6ecbaf95df7d1be3e4f7915752c80a
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 12:22:43 2014 -0430
+
+    Update screen.css
+
+commit bfb27649049939730186f1b54576efab0dc30989
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 12:03:36 2014 -0430
+
+    Update base.html
+
+commit b9f82dc4b1497d72509eb7fd8b61586861252fc3
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 12:02:21 2014 -0430
+
+    Update screen.css
+
+commit d8df29da7c7592013f39eaca1f444d4f26dcf8da
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 11:54:40 2014 -0430
+
+    Update base.html
+
+commit b8dfce5fdff0c9fa44d9f4766fcd4b1f90bf50ba
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 11:49:20 2014 -0430
+
+    Update archives.html
+
+commit 84c9be7865a7166875267928c710efd85674b7c7
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 11:46:11 2014 -0430
+
+    Update base.html
+
+commit 368743db84b2a1c7fcddd12bb2d79e5f5abdaa67
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 11:45:35 2014 -0430
+
+    Update archives.html
+
+commit 57136009639e54997937a2b1094eda9173ddbd77
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 11:44:01 2014 -0430
+
+    Update page.html
+
+commit a2c3e931e493596af5db8855c31a2f7c06c0cd02
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 11:34:33 2014 -0430
+
+    Update screen.css
+
+commit 75acb013538b8b60b4410e7a6cf8dafe57cd6712
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 11:33:34 2014 -0430
+
+    Delete syntax.css
+
+commit cce62d88f58e1d345820d4091be259899ba0ea08
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 11:32:53 2014 -0430
+
+    Update base.html
+
+commit a8c0829718f20cf17ddf5284ad79367efa111d0b
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 11:31:28 2014 -0430
+
+    Update base.html
+
+commit 69d76597b7b0ff1384a9f02885ea4445e2130347
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 11:25:25 2014 -0430
+
+    Update base.html
+
+commit f9f6c7994bd036e2fc984b688caff15fa6f83a3d
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 11:22:21 2014 -0430
+
+    Update base.html
+
+commit 6ee2714435a8480c2947c0421a8421f92ebac81e
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 11:21:44 2014 -0430
+
+    Create syntax.css
+
+commit e11fd281377faad5b7999153fa58deab8d1d0105
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 11:17:52 2014 -0430
+
+    Update base.html
+
+commit d99c83474a92e7a280696f83cde1017d96697d74
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 11:04:35 2014 -0430
+
+    Update base.html
+
+commit 17d726dd3a83d9f92f0b2f5dba4bcd7ce4ee6e7e
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Thu Dec 18 10:49:12 2014 -0430
+
+    Update base.html
+
+commit f71e4336e036e1230b1d97dff4c4467b508bbf20
+Author: Goran Peretin <goran.peretin@gmail.com>
+Date:   Sun Jun 22 18:24:43 2014 +0100
+
+    Update README.md
+
+commit becb2b60861fadead7b01f1837f202513358fbaa
+Author: Goran Peretin <goran.peretin@gmail.com>
+Date:   Sun Jun 22 18:19:47 2014 +0100
+
+    Update README.md
+
+commit e09b5b50e3151ebec938fd654a994b55f29c2192
+Author: Goran Peretin <goran.peretin@gmail.com>
+Date:   Sun Jun 22 18:11:43 2014 +0100
+
+    Basic functionality - home and post pages.
+
+commit 4c612538944015dec904bc7d6b0454fb1c3141aa
+Author: Goran Peretin <goran.peretin@gmail.com>
+Date:   Sun Jun 22 18:00:03 2014 +0100
+
+    Initial commit
