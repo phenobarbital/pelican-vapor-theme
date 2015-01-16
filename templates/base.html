@@ -112,19 +112,19 @@
     <meta name="dcterms.type" content="frontpage" />
     <meta name="dcterms.identifier" content="0" />
     <meta name="dcterms.source" content="{{ SITEURL }}" />
-    <meta name="dcterms.publisher" content="{{ AUTHOR }}" />    
+    <meta name="dcterms.publisher" content="{{ AUTHOR }}" />
+    {% if articles_page.has_previous() %}
+        <link rel="prev" href="{{ SITEURL }}/{{ articles_previous_page.url }}">
+    {% endif %}
+    {% if articles_page.has_next() %}
+       <link rel="next" href="{{ SITEURL }}/{{ articles_next_page.url }}">
+    {% endif %}    
     {% if OPEN_GRAPH_IMAGE %}
     <meta property="og:image" content="{{ SITEURL }}/theme/images/logo.png" />
     <meta name="twitter:image" content="{{ SITEURL }}/theme/images/logo.png" /> 
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
-    {% if articles_page.has_previous() %}
-        <link rel="prev" href="{{ SITEURL }}/{{ articles_previous_page.url }}">
-    {% endif %}
-    {% if articles_page.has_next() %}
-       <link rel="next" href="{{ SITEURL }}/{{ articles_next_page.url }}">
-    {% endif %}
     {% endif %}
     {% endif %}
 {% endif %}    
