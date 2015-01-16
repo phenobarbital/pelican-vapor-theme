@@ -1,81 +1,16 @@
-@font-face {
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Merriweather Light'), local('Merriweather-Light'), url(http://fonts.gstatic.com/s/merriweather/v8/ZvcMqxEwPfh2qDWBPxn6ngbhkFHsrh0kR6Vt9NCEXFA.woff2) format('woff2'), url(http://fonts.gstatic.com/s/merriweather/v8/ZvcMqxEwPfh2qDWBPxn6nuHI62qVOK5UeNHEnA5WJLY.woff) format('woff');
-}
-@font-face {
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Merriweather'), url(http://fonts.gstatic.com/s/merriweather/v8/RFda8w1V0eDZheqfcyQ4ECYtBUPDK3WL7KRKS_3q7OE.woff2) format('woff2'), url(http://fonts.gstatic.com/s/merriweather/v8/RFda8w1V0eDZheqfcyQ4EOY5mlVXtdNkpsMpKkrDXP4.woff) format('woff');
-}
-@font-face {
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Merriweather Bold'), local('Merriweather-Bold'), url(http://fonts.gstatic.com/s/merriweather/v8/ZvcMqxEwPfh2qDWBPxn6nrtyvEAkSoLz49zCMsfi7f0.woff2) format('woff2'), url(http://fonts.gstatic.com/s/merriweather/v8/ZvcMqxEwPfh2qDWBPxn6nkIs04IdwfM8211RGOj6sr8.woff) format('woff');
-}
-@font-face {
-  font-family: 'Merriweather';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Merriweather Light Italic'), local('Merriweather-LightItalic'), url(http://fonts.gstatic.com/s/merriweather/v8/EYh7Vl4ywhowqULgRdYwIMcFarMVUcVBaYEDCrD2jdE.woff2) format('woff2'), url(http://fonts.gstatic.com/s/merriweather/v8/EYh7Vl4ywhowqULgRdYwIGt0GEABqRLLuZUHa3_c53M.woff) format('woff');
-}
-@font-face {
-  font-family: 'Merriweather';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Merriweather Italic'), local('Merriweather-Italic'), url(http://fonts.gstatic.com/s/merriweather/v8/So5lHxHT37p2SS4-t60SlGT_9zNUIGhJpHBmvB4ufkI.woff2) format('woff2'), url(http://fonts.gstatic.com/s/merriweather/v8/So5lHxHT37p2SS4-t60SlMCDUKfIFSGVV_H-ln9NBDw.woff) format('woff');
-}
-@font-face {
-  font-family: 'Merriweather';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Merriweather Bold Italic'), local('Merriweather-BoldItalic'), url(http://fonts.gstatic.com/s/merriweather/v8/EYh7Vl4ywhowqULgRdYwIETJcU6w6FkJJguz70lRQrw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/merriweather/v8/EYh7Vl4ywhowqULgRdYwIJ8prASTbjQD-4Pbn4pC6Zg.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/TCmDhmS1RRL7aqhqZW19hwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/wMws1cEtxWZc6AZZIpiqWALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSgzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSr3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/O4NhV7_qs9r9seTo7fnsVJBw1xU1rKptJj_0jans920.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/O4NhV7_qs9r9seTo7fnsVLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 600;
-  src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxgMC0oC6VJYo9K-HdcDhkoU.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxrMceF-wWi3rV7g1_WXZh1k.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans Condensed';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xH1diRPH45k2WKu3ejU_l5f3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xPQd3qlve4PL-Wb1z1nySP33rGVtsTkPsbDajuO5ueQw.woff) format('woff');
-}
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(http://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJRQY7K75eWF8CEHY3idiESw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJdws6VUGd0SOnU-R_teOl7k.woff) format('woff');
-}
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(http://fonts.gstatic.com/s/robotoslab/v6/3__ulTNA7unv0UtplybPipBw1xU1rKptJj_0jans920.woff2) format('woff2'), url(http://fonts.gstatic.com/s/robotoslab/v6/3__ulTNA7unv0UtplybPirO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
-}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:300;src:local('Merriweather Light'), local('Merriweather-Light'), url(http://fonts.gstatic.com/s/merriweather/v8/ZvcMqxEwPfh2qDWBPxn6ngbhkFHsrh0kR6Vt9NCEXFA.woff2) format('woff2'), url(http://fonts.gstatic.com/s/merriweather/v8/ZvcMqxEwPfh2qDWBPxn6nuHI62qVOK5UeNHEnA5WJLY.woff) format('woff');}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:400;src:local('Merriweather'), url(http://fonts.gstatic.com/s/merriweather/v8/RFda8w1V0eDZheqfcyQ4ECYtBUPDK3WL7KRKS_3q7OE.woff2) format('woff2'), url(http://fonts.gstatic.com/s/merriweather/v8/RFda8w1V0eDZheqfcyQ4EOY5mlVXtdNkpsMpKkrDXP4.woff) format('woff');}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:700;src:local('Merriweather Bold'), local('Merriweather-Bold'), url(http://fonts.gstatic.com/s/merriweather/v8/ZvcMqxEwPfh2qDWBPxn6nrtyvEAkSoLz49zCMsfi7f0.woff2) format('woff2'), url(http://fonts.gstatic.com/s/merriweather/v8/ZvcMqxEwPfh2qDWBPxn6nkIs04IdwfM8211RGOj6sr8.woff) format('woff');}
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:300;src:local('Merriweather Light Italic'), local('Merriweather-LightItalic'), url(http://fonts.gstatic.com/s/merriweather/v8/EYh7Vl4ywhowqULgRdYwIMcFarMVUcVBaYEDCrD2jdE.woff2) format('woff2'), url(http://fonts.gstatic.com/s/merriweather/v8/EYh7Vl4ywhowqULgRdYwIGt0GEABqRLLuZUHa3_c53M.woff) format('woff');}
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:400;src:local('Merriweather Italic'), local('Merriweather-Italic'), url(http://fonts.gstatic.com/s/merriweather/v8/So5lHxHT37p2SS4-t60SlGT_9zNUIGhJpHBmvB4ufkI.woff2) format('woff2'), url(http://fonts.gstatic.com/s/merriweather/v8/So5lHxHT37p2SS4-t60SlMCDUKfIFSGVV_H-ln9NBDw.woff) format('woff');}
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:700;src:local('Merriweather Bold Italic'), local('Merriweather-BoldItalic'), url(http://fonts.gstatic.com/s/merriweather/v8/EYh7Vl4ywhowqULgRdYwIETJcU6w6FkJJguz70lRQrw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/merriweather/v8/EYh7Vl4ywhowqULgRdYwIJ8prASTbjQD-4Pbn4pC6Zg.woff) format('woff');}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/TCmDhmS1RRL7aqhqZW19hwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/wMws1cEtxWZc6AZZIpiqWALUuEpTyoUstqEm5AMlJo4.woff) format('woff');}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;src:local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSgzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSr3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');}
+@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/O4NhV7_qs9r9seTo7fnsVJBw1xU1rKptJj_0jans920.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/O4NhV7_qs9r9seTo7fnsVLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');}
+@font-face{font-family:'Open Sans';font-style:italic;font-weight:600;src:local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxgMC0oC6VJYo9K-HdcDhkoU.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxrMceF-wWi3rV7g1_WXZh1k.woff) format('woff');}
+@font-face{font-family:'Open Sans Condensed';font-style:normal;font-weight:300;src:local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xH1diRPH45k2WKu3ejU_l5f3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xPQd3qlve4PL-Wb1z1nySP33rGVtsTkPsbDajuO5ueQw.woff) format('woff');}
+@font-face{font-family:'Roboto Slab';font-style:normal;font-weight:300;src:local('Roboto Slab Light'), local('RobotoSlab-Light'), url(http://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJRQY7K75eWF8CEHY3idiESw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJdws6VUGd0SOnU-R_teOl7k.woff) format('woff');}
+@font-face{font-family:'Roboto Slab';font-style:normal;font-weight:400;src:local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(http://fonts.gstatic.com/s/robotoslab/v6/3__ulTNA7unv0UtplybPipBw1xU1rKptJj_0jans920.woff2) format('woff2'), url(http://fonts.gstatic.com/s/robotoslab/v6/3__ulTNA7unv0UtplybPirO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');}
 body{background-color:#ffffff;color:#7f8c8d;font-size:15px;font-weight:100;line-height:1.6em;margin:0;padding:0;-webkit-font-smoothing:subpixel-antialiased;}
 body *{max-height:1000000em;}
 hr{border-top:1px solid #E5E5E5;border-bottom:1px solid #FFF;}
