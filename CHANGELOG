@@ -1,3 +1,21 @@
+commit 9a4f0a71d73279cc15951fce93c666d12d4e08c6
+Author: abr4xas <me@abr4xas.org>
+Date:   Fri Jan 16 00:56:49 2015 -0430
+
+    Agregando efectos CSS tooltip y se agrega version optimizada de la imagen del header
+
+commit fb44942dc8bb7a5caf3cbdc25e3013a499195dd4
+Author: abr4xas <me@abr4xas.org>
+Date:   Fri Jan 16 00:26:17 2015 -0430
+
+    bug fix
+
+commit 130bf72effe9e4abcc6846f06700f318875eecec
+Author: abr4xas <me@abr4xas.org>
+Date:   Fri Jan 16 00:13:41 2015 -0430
+
+    Agregando cambios
+
 commit cf70d380f62e2e0c237ff762b04883546439a785
 Author: abr4xas <me@abr4xas.org>
 Date:   Fri Jan 16 00:13:04 2015 -0430
