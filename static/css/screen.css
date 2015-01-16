@@ -91,7 +91,7 @@ a.archive-link,
 #site-head {
 padding: 10px 0px;
 color: #F8F8F8;
-background: url("http://abr4xas.github.io/sks-web/img/banner-bg.jpg") no-repeat scroll center center / cover transparent;
+background: url("../images/banner-bg.jpg") no-repeat scroll center center / cover transparent;
 }
 
 article.preview {

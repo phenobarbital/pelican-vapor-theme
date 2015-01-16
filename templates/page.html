@@ -1,26 +1,48 @@
 {% extends "base.html" %}
 {% block title %}{{ page.title }}{%endblock%}
 {% block content %}
-
-
-    <article class="post">
-        <header>
-        <h1 class="post-title">{{ page.title|striptags }}</h1>
-        <div class="post-meta"><time datetime="{{ page.date|strftime('%YYYY-%MM-%DD') }}">{{ page.date|strftime('%A, %B %d, %Y') }}</time></div>
-        </header>
-
-        <section class="post-content">
-        {% import 'translations.html' as translations with context %}
-        {{ translations.translations_for(page) }}        
-        {{ page.content }}
+<article class="post" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+    <header>
+        <h1 class="post-title" itemprop="headline">{{ page.title|striptags }}</h1>
+        <div class="post-meta">
+            <time itemprop="datePublished" datetime="{{ page.date|strftime('%YYYY-%MM-%DD') }}">
+                <a href="#" class="tooltip-bottom" data-tooltip="Published">
+                    <i class="fa fa-calendar"></i>
+                    {{ page.date|strftime('%A, %B %d, %Y') }}
+                </a>   
+            </time>
+            <span class="entry-author" itemscope="itemscope" itemtype="http://schema.org/Person" itemprop="author">    
+                <a href="#" itemprop="url" rel="author" class="tooltip-bottom" data-tooltip="Published by">
+                    <i class="fa fa-user"></i>
+                    <span itemprop="name">
+                        {{ page.author }}
+                    </span>    
+                </a>  
+            </span>    
+        </div>            
+    </header>    
+    <section class="post-content"> 
+        <div itemprop="text">
+            {{ page.content }}
+        </div>    
         <hr>
-        <small>Si deseas realizar una donacion via PayPal puedes hacerlo dandole un clic al cerdito... <br /> Gracias!!</small>
-
-<form class="text-center" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="RKG8G3ABP4XSW">
-<input type="image" src="{{ SITEURL }}/theme/images/1412723932_money_box.svg" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-</form>     
-        </section>
-    </article>
+        <small>
+            Si deseas realizar una donacion via PayPal puedes hacerlo dandole un clic al cerdito...
+        </small>
+        <form class="text-center" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="RKG8G3ABP4XSW">
+            <input type="image" src="{{ SITEURL }}/theme/images/1412723932_money_box.svg" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        </form>   
+        <br />
+        <small>
+            Si deseas realizar una donacion via Btc puedes hacerlo usando <br /> esto: 1KQbQ1oWNaTeLQ671NhXS1jVd8w5yQwCmi.
+        </small>
+        <br /> 
+        <small>
+            Gracias!!
+        </small>
+    </section>
+        {% include 'ads.html' %}    
+</article>
 {% endblock %}

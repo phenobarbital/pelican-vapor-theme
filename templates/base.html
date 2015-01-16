@@ -6,16 +6,16 @@
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/screen.min.css" />
     <link rel="publisher" href="{{ PUBLISHER }}"/>
-    <link rel="apple-touch-startup-image" href="{{ STARTUP_IMAGE }}">
+    <link rel="apple-touch-startup-image" href="{{ SITEURL }}/theme/images/logo.png">
     <link type="text/plain" rel="socialmedia" href="{{ SITEURL }}/socialmedia.txt" />
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta http-equiv="imagetoolbar" content="no">
     <meta http-equiv="pragma" content="cache" />
-    <meta http-equiv="cache-control" content ="cache" /> 
+    <meta http-equiv="cache-control" content="cache" /> 
     <meta http-equiv="vary" content="content-language" />
     <meta http-equiv="content-style-type" content="text/css" />    
-    <meta name="application-name" content="El blog de abr4xas"/>
+    <meta name="application-name" content="{{ SITENAME }}"/>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -31,7 +31,7 @@
     <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection/" />
 {# Open Graph tags #}
     {% if USE_OPEN_GRAPH is not defined %}
-        {% set USE_OPEN_GRAPH = True %}
+        {% set USE_OPEN_GRAPH = False %}
     {% endif %}
 {% if USE_OPEN_GRAPH %}
 <!-- Open Graph tags -->
@@ -41,8 +41,8 @@
         <meta name="twitter:card" content="summary"> 
         <meta name="twitter:site" content="@{{ TWITTER_USERNAME }}">
         <meta property="og:site_name" content="{{ SITENAME }}" />
-        <meta property="og:locale" content="es_ES" />
-        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale" content="{{ SITE_LANG }}" />
+        <meta property="og:locale:alternate" content="{{ SITE_LANG_ALTERNATE }}" />
     {% if article %}
         <link rel="canonical" href="{{ SITEURL }}/{{ article.url }}">
         <meta property="og:image:type" content="image/png">
@@ -82,14 +82,14 @@
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="{{ SITENAME }}"/>
         <meta property="og:url" content="{{ SITEURL }}"/>
-        <meta property="og:description" content="El blog de abr4xas, blog sobre noticias, tecnología, música, gnu/linux, anime, actualidad, intercambio y directorio de informacion de servicios profesionales en tecnología. Eventos, Asesorias Software Libre"/>
+        <meta property="og:description" content="{{ SITE_DESCRIPTION }}"/>
         <link rel="canonical" href="{{ SITEURL }}">    
         <meta property="og:image" content="{{ SITEURL }}/theme/images/logo.png" />
         <meta name="twitter:image" content="{{ SITEURL }}/theme/images/logo.png" /> 
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="300">
         <meta property="og:image:height" content="300">
-        <meta name="description" content="El blog de abr4xas, blog sobre noticias, tecnología, música, gnu/linux, anime, actualidad, intercambio y directorio de informacion de servicios profesionales en tecnología. Eventos, Asesorias Software Libre">    
+        <meta name="description" content="{{ SITE_DESCRIPTION }}">    
         {% if OPEN_GRAPH_IMAGE %}
             <meta property="og:image" content="{{ SITEURL }}/theme/images/logo.png" />
             <meta name="twitter:image" content="{{ SITEURL }}/theme/images/logo.png" /> 
@@ -99,17 +99,10 @@
         {% endif %}
     {% endif %}
 {% endif %}    
-    <link type="text/plain" rel="socialmedia" href="http://abr4xas.org/socialmedia.txt" />
 {% if FEED_RSS %}
     <link href="{{ SITEURL }}/{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
 {% endif %}
 <!-- icons -->
-    <link rel="shortcut icon" href="{{ SITEURL }}/theme/images/favicon.ico">
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-160x160.png" sizes="160x160" />
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-16x16.png" sizes="16x16" />
     <link rel="apple-touch-icon" sizes="152x152" href="{{ SITEURL }}/theme/images/apple-touch-icon-152x152.png" />
     <link rel="apple-touch-icon" sizes="144x144" href="{{ SITEURL }}/theme/images/apple-touch-icon-144x144.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="{{ SITEURL }}/theme/images/apple-touch-icon-114x114.png" />
@@ -117,7 +110,13 @@
     <link rel="apple-touch-icon" sizes="76x76" href="{{ SITEURL }}/theme/images/apple-touch-icon-76x76.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="{{ SITEURL }}/theme/images/apple-touch-icon-72x72.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="{{ SITEURL }}/theme/images/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ SITEURL }}/theme/images/apple-touch-icon-57x57.png" />   
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ SITEURL }}/theme/images/apple-touch-icon-57x57.png" />  
+    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-160x160.png" sizes="160x160" />
+    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon-16x16.png" sizes="16x16" />
+    <link rel="shortcut icon" href="{{ SITEURL }}/theme/images/favicon.ico">    
 <!--/ icons -->
     <script type="text/javascript">
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -129,34 +128,42 @@
         var _qevents = _qevents || [];
     </script>
 </head>
-<body id="index" class="home">
-    <header id="site-head">
-        <h1 class="blog-title">
+<body id="index" class="home" itemscope itemtype="http://schema.org/WebPage">
+    <header id="site-head" itemscope itemtype="http://schema.org/WPHeader">
+        <h1 class="blog-title" itemprop="headline">
             <a href="{{ SITEURL }}">{{ SITENAME }}</a>
-            <span># nano /var/log/life.log</span>
+            <span itemprop="description">{{ TAG_LINE }}</span>
         </h1>
-        <nav class="menu" role="nav">
+        <nav class="menu" role="nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
             <ul>
                 {% for p in PAGES %}
-                <li><a href="{{ SITEURL }}/{{ p.url }}" title="{{ p.title }}">{{ p.title }}</a></li>
+                <li itemprop="url">
+                    <a href="{{ SITEURL }}/{{ p.url }}" title="{{ p.title }}" itemprop="name">
+                        {{ p.title }}
+                    </a>
+                </li>
                 {% endfor %}
-                <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL | default('archives.html') }}" title="Archives"> Archives</a></li>
+                <li itemprop="url">
+                    <a href="{{ SITEURL }}/{{ ARCHIVES_URL | default('archives.html') }}" title="Archives" itemprop="name">
+                        Archives
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
     {% block content %}
     {% endblock %}
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
         <div class="inner">
             <section class="copyright">
-                <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+                <a itemprop="url" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
                     CC Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />
                 <a href="http://planeta.vaslibre.org.ve" title="Planeta VaSlibre" target="_blank">
                     <img src="http://planeta.vaslibre.org.ve/img/planeta_vaslibre_80x15.png" alt="Planeta Vaslibre RSS"/>
                 </a> 
             </section>
             <section>
-                Based on Vapor theme by <a href="http://sethlilly.com/" target="_blank">Seth Lilly</a>
+                Based on Vapor theme by <a itemprop="url" href="http://sethlilly.com/" target="_blank">Seth Lilly</a>
             </section>
         </div>
     </footer>
