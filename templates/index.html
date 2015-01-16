@@ -2,9 +2,8 @@
 {% block content %}
 <main class="content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
     <section>
-        <ol id="post-list">
             {% for article in articles_page.object_list %}
-                <article class="preview" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                <article class="preview" itemscope itemtype="http://schema.org/BlogPosting">
                     <header>
                         <h1 class="post-title" itemprop="headline">
                             <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark">
@@ -43,7 +42,6 @@
                     </section>
                 </article>
             {% endfor %}
-        </ol><!-- /#posts-list -->
     {% include 'pagination.html' %}
     </section><!-- /#content -->
 </main><!-- /main -->
