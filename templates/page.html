@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}{{ page.title }}{%endblock%}
 {% block content %}
-<article class="post" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
     <header>
         <h1 class="post-title" itemprop="headline">{{ page.title|striptags }}</h1>
         <div class="post-meta">
@@ -11,7 +11,7 @@
                     {{ page.date|strftime('%A, %B %d, %Y') }}
                 </a>   
             </time>
-            <span class="entry-author" itemscope="itemscope" itemtype="http://schema.org/Person" itemprop="author">    
+            <span class="entry-author" itemscope="" itemtype="http://schema.org/Person" itemprop="author">    
                 <a href="#" itemprop="url" rel="author" class="tooltip-bottom" data-tooltip="Published by">
                     <i class="fa fa-user"></i>
                     <span itemprop="name">

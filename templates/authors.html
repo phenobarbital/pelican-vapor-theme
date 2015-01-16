@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}{{ SITENAME }} - Authors{% endblock %}
 {% block content %}
-<article class="post" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
     <header>
         <h1 class="post-title" itemprop="headline">Authors on {{ SITENAME }}</h1>           
     </header>
@@ -9,7 +9,7 @@
         <div itemprop="text">
             <ul>
                 {%- for author, articles in authors|sort %}
-                <li itemscope="itemscope" itemtype="http://schema.org/Person" itemprop="author">
+                <li itemscope="" itemtype="http://schema.org/Person" itemprop="author">
                     <a href="{{ SITEURL }}/{{ author.url }}" itemprop="url" rel="author" class="tooltip-bottom" data-tooltip="View all {{ author }}'s post">
                         <i class="fa fa-user"></i>
                         <span itemprop="name">    

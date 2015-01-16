@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<main class="content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+<main class="content" role="main" itemprop="mainContentOfPage" itemscope="" itemtype="http://schema.org/Blog">
     <section>
             {% for article in articles_page.object_list %}
                 <article class="preview" itemscope itemtype="http://schema.org/BlogPosting">
@@ -18,7 +18,7 @@
                                         {{ article.date|strftime('%A, %B %d, %Y') }}
                                     </a>   
                                 </time>
-                                <span class="entry-author" itemscope="itemscope" itemtype="http://schema.org/Person" itemprop="author">    
+                                <span class="entry-author" itemscope="" itemtype="http://schema.org/Person" itemprop="author">    
                                     <a href="#" itemprop="url" rel="author" class="tooltip-bottom" data-tooltip="Published by {{ article.author }}">
                                         <i class="fa fa-user"></i>
                                         <span itemprop="name">
