@@ -12,20 +12,22 @@
                             </a>
                         </h1>
                         <div class="post-meta">
-                            <time itemprop="datePublished" datetime="{{ article.date|strftime('%YYYY-%MM-%DD') }}">
-                                <a href="#" class="tooltip-bottom" data-tooltip="Published">
-                                    <i class="fa fa-calendar"></i>
-                                    {{ article.date|strftime('%A, %B %d, %Y') }}
-                                </a>   
-                            </time>
-                            <span class="entry-author" itemscope="itemscope" itemtype="http://schema.org/Person" itemprop="author">    
-                                <a href="#" itemprop="url" rel="author" class="tooltip-bottom" data-tooltip="Published by">
-                                    <i class="fa fa-user"></i>
-                                    <span itemprop="name">
-                                        {{ article.author }}
-                                    </span>    
-                                </a>  
-                            </span>    
+                            <small>
+                                <time itemprop="datePublished" datetime="{{ article.date|strftime('%YYYY-%MM-%DD') }}">
+                                    <a href="#" class="tooltip-bottom" data-tooltip="Published">
+                                        <i class="fa fa-calendar"></i>
+                                        {{ article.date|strftime('%A, %B %d, %Y') }}
+                                    </a>   
+                                </time>
+                                <span class="entry-author" itemscope="itemscope" itemtype="http://schema.org/Person" itemprop="author">    
+                                    <a href="#" itemprop="url" rel="author" class="tooltip-bottom" data-tooltip="Published by">
+                                        <i class="fa fa-user"></i>
+                                        <span itemprop="name">
+                                            {{ article.author }}
+                                        </span>    
+                                    </a>  
+                                </span> 
+                            </small>    
                         </div>
                     </header>
                     <section class="post-excerpt">
