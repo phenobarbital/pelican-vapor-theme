@@ -1,3 +1,15 @@
+commit cf70d380f62e2e0c237ff762b04883546439a785
+Author: abr4xas <me@abr4xas.org>
+Date:   Fri Jan 16 00:13:04 2015 -0430
+
+    Cambios varios en la plantilla, se agrega funcionalidades de schema.org
+
+commit 4e0d1469b4ae7b3f231ad0dea75390508e31e179
+Author: abr4xas <me@abr4xas.org>
+Date:   Thu Jan 15 19:39:03 2015 -0500
+
+    Remove Inline small JavaScript
+
 commit 9d7e193b46523b50557a7c49099cb34dbe2a98b7
 Author: abr4xas <me@abr4xas.org>
 Date:   Thu Jan 15 19:38:24 2015 -0500
