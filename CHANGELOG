@@ -1,3 +1,9 @@
+commit 5c01450a13e44fa8aea3dbe0f3e079b82837f99f
+Author: abr4xas <me@abr4xas.org>
+Date:   Fri Jan 16 15:04:51 2015 -0430
+
+    Agregada base64 img del header, agregada clase para el boton de planeta vaslibre
+
 commit d8bac63b874bc95a6d3900f269b0f86d65c7caaa
 Author: abr4xas <me@abr4xas.org>
 Date:   Fri Jan 16 14:47:14 2015 -0430
