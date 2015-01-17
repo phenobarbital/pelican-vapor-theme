@@ -2,12 +2,10 @@
 {% block content %}
 <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
     <header>
-        <h1 class="post-title" itemprop="headline">Archives for {{ SITENAME }}</h1>            
-    </header>    
+        <h1 class="post-title" itemprop="headline">Archives for {{ SITENAME }}</h1>     
+    </header>
     <section class="post-content">
-        <a rel="nofollow" href="https://www.freelancer.com/affiliates/abr4xas/" target="_blank">
-            <img src="https://cdn2.f-cdn.com/static/img/affiliates/freelancer-banner-728x90-2.gif?v=566be78f5285cfeeddf0ee42d168606c&m=2" alt="Freelance Jobs">
-        </a>
+        <a rel="nofollow" href="https://www.freelancer.com/affiliates/abr4xas/" target="_blank"><img src="https://cdn2.f-cdn.com/static/img/affiliates/freelancer-banner-728x90-2.gif?v=566be78f5285cfeeddf0ee42d168606c&m=2" alt="Freelance Jobs"></a>
         <div itemprop="text">
             <dl>
             {% for article in dates %}
@@ -16,8 +14,8 @@
                         <a href="#" class="tooltip-bottom" data-tooltip="Published">
                             <i class="fa fa-calendar"></i>
                              {{ article.locale_date }}
-                        </a>   
-                    </time>                    
+                        </a>
+                    </time>
                 </dt>
                 <dd>
                     <a itemprop="url" href="{{ SITEURL }}/{{ article.url }}">
@@ -28,23 +26,8 @@
             </dl>
         </div>
         <hr>
-        <small>
-            Si deseas realizar una donacion via PayPal puedes hacerlo dandole un clic al cerdito...
-        </small>
-        <form class="text-center" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="RKG8G3ABP4XSW">
-            <input type="image" src="{{ SITEURL }}/theme/images/1412723932_money_box.svg" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-        </form>   
-        <br />
-        <small>
-            Si deseas realizar una donacion via Btc puedes hacerlo usando <br /> esto: 1KQbQ1oWNaTeLQ671NhXS1jVd8w5yQwCmi
-        </small>
-        <br /> 
-        <small>
-            Gracias!!
-        </small>
+{% include 'donate.html' %}
     </section>
-    {% include 'ads.html' %} 
+    {% include 'ads.html' %}
 </article>
 {% endblock %}

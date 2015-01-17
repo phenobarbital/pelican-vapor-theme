@@ -3,42 +3,27 @@
 {% block content %}
 <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
     <header>
-        <h1 class="post-title" itemprop="headline">Authors on {{ SITENAME }}</h1>           
+        <h1 class="post-title" itemprop="headline">Authors on {{ SITENAME }}</h1>       
     </header>
-    <section class="post-content"> 
+    <section class="post-content">
         <div itemprop="text">
             <ul>
                 {%- for author, articles in authors|sort %}
                 <li itemscope="" itemtype="http://schema.org/Person" itemprop="author">
                     <a href="{{ SITEURL }}/{{ author.url }}" itemprop="url" rel="author" class="tooltip-bottom" data-tooltip="View all {{ author }}'s post">
                         <i class="fa fa-user"></i>
-                        <span itemprop="name">    
+                        <span itemprop="name">
                             {{ author }}
-                        </span>     
-                    </a> 
+                        </span>
+                    </a>
                     ({{ articles|count }})
                 </li>
                 {% endfor %}
             </ul>
-        </div>    
+        </div>
         <hr>
-        <small>
-            Si deseas realizar una donacion via PayPal puedes hacerlo dandole un clic al cerdito...
-        </small>
-        <form class="text-center" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="RKG8G3ABP4XSW">
-            <input type="image" src="{{ SITEURL }}/theme/images/1412723932_money_box.svg" name="submit" alt="PayPal - The safer, easier way to pay online!">
-        </form>   
-        <br />
-        <small>
-            Si deseas realizar una donacion via Btc puedes hacerlo usando <br /> esto: 1KQbQ1oWNaTeLQ671NhXS1jVd8w5yQwCmi.
-        </small>
-        <br /> 
-        <small>
-            Gracias!!
-        </small>
+{% include 'donate.html' %}
     </section>
-        {% include 'ads.html' %}    
+        {% include 'ads.html' %}
 </article>
 {% endblock %}

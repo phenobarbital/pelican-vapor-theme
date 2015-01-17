@@ -13,29 +13,29 @@
                         <div class="post-meta">
                             <small>
                                 <time itemprop="datePublished" datetime="{{ article.date|strftime('%YYYY-%MM-%DD') }}">
-                                    <a href="#" class="tooltip-bottom" data-tooltip="Published @ {{ article.date|strftime('%YYYY-%MM-%DD') }}">
+                    <a href="#" class="tooltip-bottom" data-tooltip="Published @ {{ article.date|strftime('%YYYY-%MM-%DD') }}">
                                         <i class="fa fa-calendar"></i>
                                         {{ article.date|strftime('%A, %B %d, %Y') }}
-                                    </a>   
+                                    </a>
                                 </time>
                                 <span class="entry-author" itemscope="" itemtype="http://schema.org/Person" itemprop="author">    
-                                    <a href="#" itemprop="url" rel="author" class="tooltip-bottom" data-tooltip="Published by {{ article.author }}">
+                <a href="#" itemprop="url" rel="author" class="tooltip-bottom" data-tooltip="Published by {{ article.author }}">
                                         <i class="fa fa-user"></i>
                                         <span itemprop="name">
                                             {{ article.author }}
-                                        </span>    
-                                    </a>  
-                                </span> 
-                            </small>    
+                                        </span>
+                                    </a>
+                                </span>
+                            </small>
                         </div>
                     </header>
                     <section class="post-excerpt">
                         <div itemprop="text">
                             {{ article.summary }}
-                        </div>    
+                        </div>
                         <p class="readmore">
                             <a itemprop="url" href="{{ SITEURL }}/{{ article.url}}" class="tooltip-bottom" data-tooltip="Read this article" title="Read this article" rel="bookmark">
-                                Read this article 
+                                Read this article
                                 <i class="fa fa-chevron-circle-right"></i>
                             </a>
                         </p>
@@ -43,6 +43,6 @@
                 </article>
             {% endfor %}
     {% include 'pagination.html' %}
-    </section><!-- /#content -->
-</main><!-- /main -->
+    </section>
+</main>
 {% endblock content %}
