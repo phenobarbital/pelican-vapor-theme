@@ -1,3 +1,9 @@
+commit b742dc7a2236845a8f3ff3c0346a1d8cc701e9a0
+Author: abr4xas <me@abr4xas.org>
+Date:   Sat Jan 17 01:38:12 2015 -0430
+
+    Actualizando plantilla, htaccess. Se eliminan templates no utilizados
+
 commit b744bc76a541eddd4957d624abcaae5b59045998
 Author: abr4xas <me@abr4xas.org>
 Date:   Fri Jan 16 19:12:01 2015 -0430
